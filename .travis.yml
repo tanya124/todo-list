@@ -10,7 +10,7 @@ cache:
   - node_modules
 script:
   - npm install
-  - CI=false npm run build
+  - npm run build
 
 deploy:
   provider: pages
