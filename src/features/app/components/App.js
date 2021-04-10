@@ -26,10 +26,10 @@ class App extends Component<*> {
                         <Route
                             component = { Welcome }
                             exact = { true }
-                            path = '/' />
+                            path = '/todo-list/' />
                         <Route
                             component = { CompletedTasksPage }
-                            path = '/info' />
+                            path = '/todo-list/info' />
                     </Switch>
                 </Router>
             </AtlasKitThemeProvider>
