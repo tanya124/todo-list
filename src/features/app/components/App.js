@@ -21,7 +21,7 @@ class App extends Component<*> {
     render() {
         return (
             <AtlasKitThemeProvider mode = 'dark'>
-                <Router history = { history } basename="/todo-list">
+                <Router history = { history } >
                     <Switch>
                         <Route
                             component = { Welcome }
