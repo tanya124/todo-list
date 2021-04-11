@@ -29,7 +29,7 @@ class App extends Component<*> {
                             path = '/todo-list/' />
                         <Route
                             component = { CompletedTasksPage }
-                            path = '/todo-list/info' />
+                            path = '/todo-list/info/' />
                     </Switch>
                 </Router>
             </AtlasKitThemeProvider>

@@ -16,17 +16,6 @@ import LogoPNG from '../../../images/logo.png';
  * Navigation Bar component.
  */
 class Navbar extends Component<Props, *> {
-    /**
-     * Initializes a new {@code Navbar} instance.
-     *
-     * @inheritdoc
-     */
-    /* constructor(props: Props) {
-        super(props);
-
-        // this._onGoToListRoomsPage = this._onGoToListRoomsPage.bind(this);
-        // this._onGoToWelcomePage = this._onGoToWelcomePage.bind(this);
-    } */
 
     /**
      * Get the array of Primary actions of Global Navigation.
@@ -37,14 +26,14 @@ class Navbar extends Component<Props, *> {
         return [
             <AkGlobalItem key = { 0 }>
                 <Tooltip content = { 'Домашняя страничка' }>
-                    <div onClick={() => this.props.dispatch(push('/'))}>
+                    <div onClick={() => this.props.dispatch(push('/todo-list/'))}>
                         <HomeCircleIcon/>
                     </div>
                 </Tooltip>
             </AkGlobalItem>,
             <AkGlobalItem key = { 1 }>
                 <Tooltip content = { 'Завершённые задачи' }>
-                    <div onClick={() => this.props.dispatch(push('/info'))}>
+                    <div onClick={() => this.props.dispatch(push('/todo-list/info/'))}>
                         <BulletListIcon/>
                     </div>
                 </Tooltip>
@@ -61,27 +50,6 @@ class Navbar extends Component<Props, *> {
         return [];
     }
 
-    // onGoToListRoomsPage: (*) => void;
-
-    /**
-     * Redirect to list of rooms page.
-     *
-     * @returns {void}
-     */
-    /* _onGoToListRoomsPage() {
-        this.props.dispatch(push('/list_rooms'));
-    }*/
-
-    // _onGoToWelcomePage: (*) => void;
-
-    /**
-     * Redirect to welcome page.
-     *
-     * @returns {void}
-     */
-    /* _onGoToWelcomePage() {
-         this.props.dispatch(push('/'));
-     }*/
 
     /**
      * Render function of component.
