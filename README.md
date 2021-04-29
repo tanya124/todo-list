@@ -1,4 +1,7 @@
 # TODO App 
+[![Build Status](https://travis-ci.org/tanya124/todo-list.png?branch=master)](https://travis-ci.org/tanya124/todo-list)
+
+[Ссылка на приложение](https://tanya124.github.io/todo-list/)
 
 ## Запуск:
 ```bash
